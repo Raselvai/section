@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Rubik', sans-serif;
+	box-sizing: border-box;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+.section_wrapper {
+	padding: 80px 0;
+	background: linear-gradient(335deg, rgba(235,78,101,1) 0%, rgba(92,80,203,1) 100%);
+}
+
+.head_text {
+	font-size: 28px;
+	position: relative;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.head_text::before {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	width: 100px;
+	height: 2px;
+	background: #eb4e65;
+}
+
+.mt_10 {
+	margin-top: 10px;
+}
+
+.social_icon a {
+	width: 30px;	
+	height: 30px;
+	background: #eb4e65;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	border-radius: 50%;
+	font-size: 13px;
+	margin: 10px 10px 0 0;
+	transition: .3s;
+	text-decoration: none;
+}
+
+.social_icon a:hover {
+	background: #5C50CB;
+}
+
+.social_icon a i {
+	color: #ffffff;
+}
+
+.img_box {
+	position: relative;
+	padding: 30px 30px 0 0;
+	overflow: hidden;
+	z-index: 1;
+	margin-top: 60px;
+}
+
+.img_box::before {
+	content: "";
+	position: absolute;	
+	width: 0;
+	height: 0;
+	border-top: 300px solid #eb4e65;
+	border-left: 300px solid transparent;
+	z-index: -1;
+	top: 0;
+	right: 0;
+}
